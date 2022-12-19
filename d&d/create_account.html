@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="create_account.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="create_account.php" method="post">
+        <label for="name">Pseudo</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Adresse email :</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Mot de passe :</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
+        <input type="submit" value="Créer un compte">
+      </form>
+</body>
+</html>
+
+  
